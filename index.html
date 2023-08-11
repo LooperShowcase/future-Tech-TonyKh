@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="speak()">allow audio</button>
+    <div class="container">
+      <h1>voice assistant by tony</h1>
+      <form
+        onsubmit="event.preventDefault();
+   converstaionUserAdd(document.getElementById('input-text').value);
+   open_ai();
+   document.getElementById('input-text').value = ''"
+      >
+        <input type="text" id="input-text" placeholder="aske me !" />
+
+        <button id="submit-button">Submit</button>
+      </form>
+      <div id="chat-container"></div>
+    </div>
+  </body>
+  <center>
+    <img
+      src="https://assets.thehansindia.com/h-upload/2022/05/14/1292195-ai.webp"
+      alt=""
+    />
+  </center>
+</html>
